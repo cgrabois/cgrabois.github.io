@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlie Grabois</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: #2d2d2d;
+      background: #f8f7f4;
+    }
+
+    /* Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #f8f7f4;
+      border-bottom: 1px solid #e5e0d8;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 1rem 2rem;
+    }
+
+    nav a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #8a6e4b;
+    }
+
+    /* Sections */
+    section {
+      scroll-margin-top: 52px;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    section + section {
+      border-top: 1px solid #e5e0d8;
+    }
+
+    /* About */
+    .intro {
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+
+    .headshot {
+      flex: 0 0 160px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 10%;
+      margin-top: 0.3rem;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .name {
+      font-family: 'Lora', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.3rem;
+    }
+
+    .position {
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #8a6e4b;
+      margin-bottom: 1.8rem;
+    }
+
+    .section-heading {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 0.9rem;
+    }
+
+    .bio p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 1.1rem;
+    }
+
+    .bio p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Contact */
+    .contact-layout {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .contact-heading-col {
+      flex: 0 0 160px;
+    }
+
+    .contact-icons {
+      display: flex;
+      gap: 1.4rem;
+      align-items: center;
+    }
+
+    .contact-icons a {
+      color: #8a6e4b;
+      font-size: 1.6rem;
+      text-decoration: none;
+      transition: color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+
+    .contact-icons a:hover {
+      color: #6b5539;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 560px) {
+      .intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+
+      .contact-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+      }
+
+      .name {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="intro">
+      <img class="headshot" src="headshot.jpeg" alt="Charlie Grabois">
+      <div class="header-text">
+        <h1 class="name">Charlie Grabois</h1>
+        <div class="position">Predoctoral Researcher &middot; Stanford Law School</div>
+        <h2 class="section-heading">About</h2>
+        <div class="bio">
+          <p>
+            Hi! I am a predoctoral researcher at Stanford Law School, working with Professor John Donohue.
+            I will be applying to economics PhD programs this fall.
+          </p>
+          <p>
+            I hold a Bachelor's in Economics and Mathematics with Highest Honors from Swarthmore College.
+          </p>
+          <p>
+            I am interested in public economics and political economy. I am particularly interested in how
+            voter enfranchisement and election laws affect who lawmakers are incentivized to help, and how
+            social safety net program design affects who is ultimately reached.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-layout">
+      <div class="contact-heading-col">
+        <h2 class="section-heading">Contact</h2>
+      </div>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/charlie-grabois/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:cgrabois@stanford.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
