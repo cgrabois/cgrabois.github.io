@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="jj-Y7gcJ0jyPPmzaSQ5Z2SvpOmDpCair1zQngBEG9ns" />
   <title>Charlie Grabois</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
       border-bottom: 1px solid #e5e0d8;
       display: flex;
       justify-content: center;
-      gap: 2.5rem;
+      gap: 3rem;
       padding: 1rem 2rem;
     }
 
@@ -72,14 +73,21 @@
       gap: 3rem;
     }
 
-    .headshot {
+    .headshot-col {
       flex: 0 0 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.3rem;
+    }
+
+    .headshot {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
       object-position: center 10%;
-      margin-top: 0.3rem;
     }
 
     .header-text {
@@ -160,16 +168,6 @@
     }
 
     /* Contact */
-    .contact-layout {
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-    }
-
-    .contact-heading-col {
-      flex: 0 0 160px;
-    }
-
     .contact-icons {
       display: flex;
       gap: 1.4rem;
@@ -196,12 +194,6 @@
         gap: 1.5rem;
       }
 
-      .contact-layout {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.2rem;
-      }
-
       .name {
         font-size: 1.7rem;
       }
@@ -213,19 +205,32 @@
   <nav>
     <a href="#about">About</a>
     <a href="#papers">Papers</a>
-    <a href="#contact">Contact</a>
+    <a href="#commentary">Commentary</a>
   </nav>
 
   <section id="about">
     <div class="intro">
-      <img class="headshot" src="headshot.jpeg" alt="Charlie Grabois">
+      <div class="headshot-col">
+        <img class="headshot" src="headshot.jpeg" alt="Charlie Grabois">
+        <div class="contact-icons">
+          <a href="https://scholar.google.com/citations?user=fk1k48sAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <i class="fab fa-google-scholar"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/charlie-grabois/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:cgrabois@stanford.edu" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
       <div class="header-text">
         <h1 class="name">Charlie Grabois</h1>
-        <div class="position">Predoctoral Researcher &middot; Stanford</div>
+        <div class="position">Predoctoral Research Fellow &middot; Stanford</div>
         <h2 class="section-heading">About</h2>
         <div class="bio">
           <p>
-            Hi! I am a predoctoral researcher at Stanford, working with Professor John Donohue.
+            Hi! I am a predoctoral research fellow at Stanford, working with Professor John Donohue.
             I will be applying to PhD programs this fall.
           </p>
           <p>
@@ -255,18 +260,14 @@
     </div>
   </section>
 
-  <section id="contact">
-    <div class="contact-layout">
-      <div class="contact-heading-col">
-        <h2 class="section-heading">Contact</h2>
+  <section id="commentary">
+    <h2 class="section-heading">Commentary</h2>
+    <div class="paper">
+      <div class="paper-title">
+        The Dangerous Spread of Jim Crow Nostalgia
       </div>
-      <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/charlie-grabois/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:cgrabois@stanford.edu" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+      <div class="paper-meta">
+        <em>With John J. Donohue. Forthcoming. </em>
       </div>
     </div>
   </section>
