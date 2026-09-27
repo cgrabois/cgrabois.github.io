@@ -177,6 +177,20 @@
       text-decoration: underline;
     }
 
+    .paper-title code {
+      font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+      font-size: 0.95em;
+    }
+
+    .paper-title a {
+      color: #8a6e4b;
+      text-decoration: underline;
+    }
+
+    .paper-title a:hover {
+      color: #6b5539;
+    }
+
     /* Contact */
     .contact-icons {
       display: flex;
@@ -216,6 +230,7 @@
     <a href="#about">About</a>
     <a href="#papers">Papers</a>
     <a href="#commentary">Commentary</a>
+    <a href="#software">Software</a>
   </nav>
 
   <section id="about">
@@ -278,6 +293,18 @@
       </div>
       <div class="paper-meta">
         <em>With John J. Donohue. <a href="https://www.project-syndicate.org/commentary/black-american-poverty-crime-rates-vastly-improved-since-jim-crow-by-john-donohue-and-charlie-grabois-2026-07" target="_blank" rel="noopener">Project Syndicate</a></em>
+      </div>
+    </div>
+  </section>
+
+  <section id="software">
+    <h2 class="section-heading">Software</h2>
+    <div class="paper">
+      <div class="paper-title">
+        <strong>R Package: <code><a href="https://github.com/cgrabois/redistrict" target="_blank" rel="noopener">redistrict</a></code></strong>
+      </div>
+      <div class="paper-meta">
+        <em>Matches U.S. congressional districts across redistricting cycles based on population/area overlap</em>
       </div>
     </div>
   </section>
